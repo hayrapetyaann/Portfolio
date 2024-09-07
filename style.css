@@ -132,17 +132,22 @@ p {
 }
 
 
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 @media (max-width: 768px) {
-    nav ul {
+    .skills-container {
         flex-direction: column;
         align-items: center;
     }
 
-    nav ul li {
-        margin: 10px 0;
-    }
-
-    .full-screen {
-        padding: 20px;
+    .skills-left, .skills-center, .skills-right {
+        margin: 20px 0;
+        width: 100%;
+        text-align: center;
     }
 }
